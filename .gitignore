@@ -15,20 +15,15 @@
 
 # Ignore configuration files that might be generated
 .env
-# Ignore any .env files except the one in the root
-!.env
 
 # Ignore Rust-specific configuration files
 rust-toolchain
 rustfmt.toml
 clippy.toml
+
 # But do not ignore the root Cargo configuration files
 !.cargo/config
 !.cargo/config.toml
 
 # Ignore lock files
 Cargo.lock
-
-# Ignore any files with sensitive information, if they are not needed in the repository
-# For example, if you have a file with API keys or other secrets, you might want to ignore it here
-# api_keys.txt
