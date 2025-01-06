@@ -11,7 +11,6 @@ use crate::types::config::Config;
 ///
 /// * `order_details` - Struct containing the specifics of the order to be created, including options for post-only and reduce-only.
 /// * `config` - Configuration containing API key and secret.
-/// * `client` - HTTP client for making requests.
 ///
 /// # Returns
 ///
@@ -20,8 +19,8 @@ use crate::types::config::Config;
 pub async fn new_order(
     order_details: OrderDetails,
     config: &Config,
-    client: &Client,
 ) -> Result<(), Box<dyn std::error::Error>> {
+    let client = Client::new();
     let timestamp = Utc::now().timestamp_millis().to_string();
     let query_string = query_string(
         &order_details.side,

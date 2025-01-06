@@ -1,7 +1,13 @@
 [package]
 name = "binance_connector"
 version = "0.1.0"
+authors = ["Enos Domingues mail@enos.dev"]
 edition = "2021"
+description = "A Rust library for interacting with the Binance API"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/EnosDomingues/binance_connector"
+keywords = ["binance", "api", "crypto", "trading"]
+categories = ["api-bindings", "cryptography::cryptocurrencies"]
 
 [dependencies]
 chrono = "0.4.39"
