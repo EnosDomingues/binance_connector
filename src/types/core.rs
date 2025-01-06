@@ -55,3 +55,13 @@ pub enum ApiError {
     CustomError(String),
 }
 
+#[derive(Debug)]
+pub struct OrderDetails {
+    pub side: String,
+    pub order_type: String,
+    pub quantity: f64,
+    pub price: Option<f64>,
+    pub time_in_force: Option<String>,
+    pub reduce_only: Option<bool>,
+}
+
