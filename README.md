@@ -26,6 +26,8 @@ Binance Connector is a Rust library that provides a simple interface for interac
 - Easy-to-use abstractions for complex API interactions.
 - Examples included to help you get started quickly.
 
+**Note:** As of the current version, this project only supports creating orders for the BTCUSDT pair on Binance Futures.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
