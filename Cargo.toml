@@ -1,6 +1,6 @@
 [package]
 name = "binance_connector"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Enos Domingues mail@enos.dev"]
 edition = "2021"
 description = "A Rust library for interacting with the Binance API"
